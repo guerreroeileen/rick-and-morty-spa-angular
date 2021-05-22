@@ -7,9 +7,10 @@ import { EpisodesComponent } from './pages/episodes/episodes.component';
 import { LocationsComponent} from './pages/locations/locations.component';
 
 const routes: Routes = [
+  {path: '', component: CharactersComponent},
   {path: 'characters', component: CharactersComponent},
   {path: 'episodes', component: EpisodesComponent},
-  {path: 'locations', component: LocationsComponent}
+  {path: 'locations', component: LocationsComponent},
 ];
 
 @NgModule({

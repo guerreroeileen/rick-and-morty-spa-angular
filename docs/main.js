@@ -433,9 +433,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
+    { path: '', component: _pages_characters_characters_component__WEBPACK_IMPORTED_MODULE_1__["CharactersComponent"] },
     { path: 'characters', component: _pages_characters_characters_component__WEBPACK_IMPORTED_MODULE_1__["CharactersComponent"] },
     { path: 'episodes', component: _pages_episodes_episodes_component__WEBPACK_IMPORTED_MODULE_2__["EpisodesComponent"] },
-    { path: 'locations', component: _pages_locations_locations_component__WEBPACK_IMPORTED_MODULE_3__["LocationsComponent"] }
+    { path: 'locations', component: _pages_locations_locations_component__WEBPACK_IMPORTED_MODULE_3__["LocationsComponent"] },
 ];
 class AppRoutingModule {
 }
