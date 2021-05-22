@@ -1,1 +1,15 @@
-<p>locations works!</p>
+<mat-grid-list cols="5">
+    <mat-grid-tile *ngFor="let item of locations">
+        <mat-card class="example-card" [class.mat-elevation-z15]=true>
+            <mat-card-header>
+                <div mat-card-avatar></div>
+                <mat-card-title>{{item.name}}</mat-card-title>
+                <mat-card-subtitle>{{item.type}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-card-subtitle>Dimensions: {{item.dimension}}</mat-card-subtitle>
+                <mat-card-subtitle>Created date: {{item.created}}</mat-card-subtitle>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

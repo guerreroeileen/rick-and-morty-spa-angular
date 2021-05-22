@@ -1,1 +1,14 @@
-<p>episodes works!</p>
+<mat-grid-list cols="5">
+    <mat-grid-tile *ngFor="let item of espisodes">
+        <mat-card class="example-card" [class.mat-elevation-z15]=true>
+            <mat-card-header>
+                <mat-card-title>{{item.name}}</mat-card-title>
+                <mat-card-subtitle>{{item.episode}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-card-subtitle>Air date: {{item.air_date}}</mat-card-subtitle>
+                <mat-card-subtitle>Created date: {{item.created}}</mat-card-subtitle>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
